@@ -25,34 +25,200 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-transition="fade">
+				<section id="home" data-transition="fade">
 					<h1>Housing Hub</h1>
 					<p>The New York City Housing Toolkit</p>
 				</section>
-				<section>
+				<section id="challenge">
 					<h2>Challenge</h2>
 					<p>How can NYC 311 service requests (and other open data) highlight neighborhood trends and monitor affordable housing for community boards?</p>
 				</section>
-				<section>
+				<section id="solution">
 						<h2>Solution</h2>
 						<p>Teams:</p>
 						<ol>
-							<li>Schema</li>
+							<li>Data Schema</li>
 							<li>Data Visualization</li>
-							<li>Awareness</li>
+							<li>Data Awareness</li>
 						</ol>
 					</section>
-				<section>
+				<section id="schema-sketch">
 					<h2>Schema</h2>
-					<p>Hello, world.</p>
-
+					<p class="small">
+						<img src="schema-sketch.png" style="width: 45%; margin: 0 auto;" />
+					</p>
+				</section>
+				<section id="schema-db">
+					<p class="small">
+						Understanding 311 complaint types that are indicative of tenant harassment/displacement
+					</p>
+					<img src="database.png" style="width: 90%; margin: 0 auto;" />
+				</section>
+				<section>
+					<section id="visuatlization">
+						<h2>Data Visualizations</h2>
+					</section>
+					<section id="visualization-1">
+						<iframe src="https://public.tableau.com/shared/32YJQ5B27?:display_count=no" width="900" height="500" style="border: 1px solid #28566c;"></iframe>
+						<!--<img src="viz1.png" style="width:80%;">-->
+						<p class="small"><a href="https://public.tableau.com/shared/32YJQ5B27?:display_count=no" target="_blank">
+							HPD 311 heat complaints by time to close (days)
+						</a></p>
+					</section>
+					<section id="visualization-2">
+						<!--<iframe src="https://public.tableau.com/views/NYC311_5/Complaintsovertime?:embed=y&:display_count=yes&publish=yes" width="1024" height="550" style="border: 1px solid #28566c;"></iframe>-->
+						<img src="viz2.png" style="width:95%;">
+						<p class="small"><a href="https://public.tableau.com/shared/32YJQ5B27?:display_count=no" target="_blank">
+							Complaints Over Time
+						</a></p>
+					</section>
+					<section id="visualization-3">
+						<!--<iframe src="https://public.tableau.com/views/311Data_1/Sheet9?:embed=y&:display_count=yes" width="900" height="500" style="border: 1px solid #28566c;"></iframe>-->
+						<img src="viz3.png" style="width:95%;">
+						<p class="small"><a href="https://public.tableau.com/profile/mallory1369#!/vizhome/311Data_1/Sheet9" target="_blank">
+							Average Resolution Time for HPD Requests in 2017
+						</a>
+						</p>
+					</section>
+					<section id="visualization-4">
+						<iframe src="https://nychousing.connect.socrata.com/?is_widget=true&hide_chrome=true#!/dashboard?places=&categories=1%3A1%3D1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%262%3D1%2C2%266%3D1%2C2%2C3%2C4%267%3D1%2C2%2C3%2C4%268%3D1%2C2%2C3%2C4%269%3D1%2C2%2610%3D1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2611%3D1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2612%3D1%2C2%2C3%2C4%2C5%2613%3D1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2614%3D1%2C2%2C3%2C4%2C5%2615%3D1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2616%3D1%2C2%2C3%7C3%3AT%3DT%7C4%3AT%3DT&start_date=2017-03-27&end_date=2017-09-23&lat=40.71074347620029&lng=-73.99959541470736&zoom=14.50443540425033&shapeIds=&shapeGroupId=f5dn-yrer&mapType=HeatMap&listViewTab=Pins&overlayLayers=Community%20Districts&search_field=&search_value=&autoUpdate=false&heatFilters=&statusFilter=&choroplethField=count&searchType=&date_type=relative" width="1024" height="550" style="border: 1px solid #28566c;"></iframe>
+						<p class="small">Building Quality Heatmap</p>
+						</a>
+					</section>
+				</section>
+				<section id="ideal-data-set">
+					<h2>Ideal Affordable Housing Data Set:
+</h2>
+					<p class="small">
+						We also wanted to understand the affordable housing landscape in NYC. We believe that’s possible by merging these 3 existing data sets:
+					</p>
+					<p>
+						<a href="https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page" target="_blank">PLUTO</a>
+					</p>
+					<p>
+<a href="http://app.coredata.nyc/?mlb=false&ntii=&ntr=&mz=14&vtl=https%3A%2F%2Fthefurmancenter.carto.com%2Fu%2Fnyufc%2Fapi%2Fv2%2Fviz%2F691a2b7c-94d7-46ac-ac4d-9a589cb2c6ed%2Fviz.json&mln=false&mlp=true&mlat=40.715593&ptsb=&nty=&mb=roadmap&pf=%7B%22subsidies%22%3Atrue%7D&md=map&mlv=false&mlng=-74.005356&btl=Borough&atp=properties" target="_blank">Coredata.nyc</a>
+</p>
+<p>
+<a href="http://taxbills.nyc/" target="_blank">Taxbills.nyc</a>
+</p>
+				</section>
+				<section>
+					<section id="recommendations-1">
+						<p>We also came up with a set of recommendations to improve open data related to affordable housing (too many to include here!)</p>
+					</section>
+					<section id="recommendations-2">
+						<img src="recommendations.png" style="width: 75%;" />
+					</section>
+				</section>
+				<section id="awareness">
+					<h2>Awareness</h2>
+					<p class="small">Proposal: website for both the public and for Community Boards to access all relevant 311 Housing related categories which have data visualizations and resources available for the public. </p>
+					<p class="small">Civic Engagement: Using this website to engage citizens and how they can help solve their problems and communicate with the Board.</p>
+				</section>
+				<section>
+					<section id="our-team">
+						<h2>Our Team</h2>
+						<div class="list" style="float:none !important; width: 46% !important; margin: 0 auto;">
+							<p class="small">
+								<strong>Challenge Owner:</strong><br><br>
+								Dan Kass<br>
+								Co-Founder, JustFix.NYC<br>
+								<a href="mailto:dan@justfix.nyc" target="_blank">dan@justfix.nyc</a>
+							</p>
+							<p class="small">
+								<strong>Challenge and Data Experts:</strong><br><br>
+								Lucy Block<br>
+								Association for Neighborhood &amp; Housing Development (ANHD)<br>
+								<a href="mailto:lucy.b@anhd.org" target="_blank">lucy.b@anhd.org</a>
+							</p>
+							<p class="small">
+								Jaime Sanchez<br>
+								Solutions Engineer, Socrata<br>
+								<a href="mailto:jaime.sanchez@socrata.com" target="_blank">jaime.sanchez@socrata.com</a>
+							</p>
+							<p class="small">
+								Noelle Francois<br>
+								Founder, HeatSeek NYC<br>
+								<a href="mailto:noelle@heatseek.org" target="_blank">noelle@heatseek.org</a>
+							</p>
+						</div>
+					</section>
+					<section id="our-team-2">
+						<h2>Our Team</h2>
+						<p>Participants:</p>
+						<div class="list">
+							<p class="small">
+								Joshua Acosta<br>
+								<a href="http://github.com/JoshuaAcosta" target="_blank">Website</a><br>
+								<a href="mailto:Acosta.joshua03@gmail.com" target="_blank">Acosta.joshua03@gmail.com</a>
+							</p>
+							<p class="small">
+								Aleksey Bilogur<br>
+								<a href="http://github.com/ResidentMario" target="_blank">Website</a><br>
+								<a href="mailto:aleksey.bilogur@gmail.com" target="_blank">aleksey.bilogur@gmail.com</a>
+							</p>
+							<p class="small">
+								Mallory Bulkley<br>
+								<a href="http://github.com/mallorybulkley" target="_blank">Website</a><br>
+								<a href="mailto:mallorybulkley@gmail.com" target="_blank">mallorybulkley@gmail.com</a>
+							</p>
+							<p class="small">
+								Danielle Carrick<br>
+								<a href="http://daniellecarrick.com" target="_blank">Website</a><br>
+								<a href="mailto:dacarrick@gmail.com" target="_blank"> dacarrick@gmail.com</a>
+							</p>
+						</div>
+						<div class="list">
+							<p class="small">
+								Anastasia Clark<br>
+								<a href="http://github.com/Anastasiaclark" target="_blank">Website</a><br>
+								<a href="mailto:Anastasia.Clark@baruch.cuny.edu" target="_blank">Anastasia.Clark@baruch.cuny.edu</a>
+							</p>
+							<p class="small">
+								Zhi He<br>
+								<a href="http://github.com/zhik" target="_blank">Website</a><br>
+								<a href="mailto:zhikhe@gmail.com" target="_blank">zhikhe@gmail.com</a>
+							</p>
+							<p class="small">
+								Maryam Jahanshahi<br>
+								<a href="http://github.com/mjahanshahi" target="_blank">Website</a><br>
+								<a href="mailto:jahanshahi@gmail.com" target="_blank">jahanshahi@gmail.com</a>
+							</p>
+							<p class="small">
+								Mark Malazarte<br>
+								<a href="http://markmalazarte.com" target="_blank">Website</a><br>
+								<a href="mailto:mark@markmalazarte.com" target="_blank">mark@markmalazarte.com</a>
+							</p>
+						</div>
+						<div class="list">
+							<p class="small">
+								Dominic Mauro<br>
+								<a href="http://github.com/dominicmauro" target="_blank">Website</a><br>
+								<a href="mailto:dmauro@doitt.nyc.gov" target="_blank">dmauro@doitt.nyc.gov</a>
+							</p>
+							<p class="small">
+								Nekpen Osuan<br>
+								<a href="http://LinkedIn.com/in/nosuan" target="_blank">Website</a><br>
+								<a href="mailto:nekpen.osuan@gmail.com" target="_blank">nekpen.osuan@gmail.com</a>
+							</p>
+							<p class="small">
+								Marc Shifflett<br>
+								<a href="http://github.com/Mashcode" target="_blank">Website</a><br>
+								<a href="mailto:marc@marcshifflett.com" target="_blank">marc@marcshifflett.com</a>
+							</p>
+							<p class="small">
+								Jack Yin<br>
+								<a href="https://www.linkedin.com/in/jackyin0" target="_blank">Website</a><br>
+								<a href="mailto:jackyin0@gmail.com" target="_blank">jackyin0@gmail.com</a>
+							</p>
+						</div>
+					</section>
 				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration

@@ -19,7 +19,24 @@ html * {
 body {
   background: #fdf6e3;
   background-color: #fdf6e3; }
-
+.list {
+  float: left;
+  width: 33%;
+  margin-right: 20px;
+}
+.list:last-child {
+  margin-right: 0;
+}
+.list p.small {
+  text-align: left;
+  font-weight: 300;
+  font-size: .35em !important;
+  line-height: 1.25em !important;
+}
+.list p.small a {
+  font-weight: 300 !important;
+  border: none !important; 
+}
 .reveal {
   font-family: "Montserrat", "Lato", sans-serif;
   font-size: 40px;
@@ -84,6 +101,11 @@ body {
   margin: 20px 0;
   line-height: 1.5em;
   font-size: .85em; }
+
+p.small {
+  font-size: .5em !important;
+  line-height: 1.5em !important;
+}
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
@@ -219,14 +241,17 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #268bd2;
+  color: #CE4148;
+  border-bottom: 4px solid #CE4148;
+  padding-bottom: 2px;
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #78b9e6;
+  color: #586e75;
   text-shadow: none;
   border: none; }
 
