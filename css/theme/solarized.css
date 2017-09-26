@@ -28,10 +28,11 @@ body {
   margin-right: 0;
 }
 .list p.small {
-  text-align: left;
-  font-weight: 300;
+  text-align: center;
+  //font-weight: 300;
+  margin: 30px 0;
   font-size: .35em !important;
-  line-height: 1.25em !important;
+  line-height: 1.35em !important;
 }
 .list p.small a {
   font-weight: 300 !important;
@@ -45,12 +46,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #d33682;
+  background: #657b83;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #d33682;
+  background: #657b83;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -103,7 +104,7 @@ body {
   font-size: .85em; }
 
 p.small {
-  font-size: .5em !important;
+  font-size: .55em !important;
   line-height: 1.5em !important;
 }
 
